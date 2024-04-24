@@ -1,0 +1,80 @@
+
+body{
+    font-family: "Roboto Mono", monospace;;
+}
+
+/* Header */
+header{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 24px;
+    font-weight: 600;
+    display: block;
+    padding: 10px 15px;
+}
+
+.menu li a:hover{
+    color: #B48560;
+}
+
+#theme-toggle{
+    cursor: pointer;
+    color: #B48560;
+    font-size: 34px;
+}
+
+/* Hero */
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100vh;
+
+}
+/* the horizontal line above name */
+.upper_line{
+    content: "";
+    width: 190px;
+    height: 10px;
+    background-color: #B48560;
+}
+/* My name */
+.hero h1{
+    font-size: 64px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+}
+/* Subtitle of the hero section */
+.hero h2{
+    margin: 0;
+    font-weight: 300;
+}
+
+/*  */
