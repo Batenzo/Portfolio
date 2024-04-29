@@ -58,6 +58,7 @@ nav{
     align-items: center;
     gap: 10px;
     height: 100vh;
+    width: 100%;
 
 }
 /* the horizontal line above name */
@@ -93,12 +94,64 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #B48560;
+    
 }
 /* heading */
 
+.heading{
+    width: 100%;
+}
+
 .heading h1{
     text-align: center;
-    color: white;
+    font-size: 48px;
+    font-weight: 500;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    align-items: center;
+}
 
+.heading h1::before, .heading h1::after{
+    content: "";
+    height: 4px;
+    background-color: #B48560;
+    display: block;
+}
+
+.about-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+    gap: 150px;
+}
+/* about img */
+
+.about-pic{
+    width: 254px;
+    height: 386px;
+    overflow: hidden;
+    position: relative;
+    
+}
+.about-pic img{
+    position: relative;
+    width: 100%;
+    display: block;
+}
+.about-pic svg{
+    position:absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: -2;
+}
+/* about paragraph */
+.about-txt{
+    width: 565px;
+}
+
+.about-txt p{
+    font-size: 24px;
 }
