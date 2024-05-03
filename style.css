@@ -222,6 +222,10 @@ nav{
     width: 50%;
 }
 
+.project_descr h3{
+    color: #B48560;
+}
+
 .project_descr ul{
     list-style: none;
     display: flex;
@@ -238,11 +242,10 @@ nav{
 .buttons a{
     text-align: center;
     text-decoration: none;
-    color: #B48560;
-    background: transparent;
+    color: #fff;
+    background: #B48560;
     width: 100px;
     padding: 5px 10px;
-    border: 2px solid #B48560;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
 }
@@ -293,4 +296,9 @@ nav{
 
 .contact_det:hover{
     transform: scale(1.1);
+}
+
+footer{
+    text-align: center;
+    margin: 20px;
 }
