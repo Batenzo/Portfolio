@@ -259,4 +259,38 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 70vh;
+}
+
+.contact h3{
+    font-weight: 600;
+    color: #B48560;
+}
+
+.contact_container{
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: #B48560 0.1rem solid;
+    border-color: #B48560;
+    margin: 2rem auto;
+    padding: 0.5rem;
+    gap: 15px;
+}
+
+.contact_det{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin: 5px;
+}
+
+.contact_det a{
+    color: #000000;
+    transition-duration: 0.3s;
+}
+
+.contact_det:hover{
+    transform: scale(1.1);
 }
