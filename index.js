@@ -14,3 +14,17 @@ if(navClose){
         navMenu.classList.remove('open')
     })
 }
+
+
+// THEME TOGGLE
+
+var night = document.getElementById('theme-toggle')
+
+night.onclick = function(){
+    document.body.classList.toggle('dark-theme');
+    if(document.body.classList.contains('dark-theme')){
+        night.className = 'bx bxs-sun';
+    }else{
+        night.className = 'bx bxs-moon'
+    }
+}
