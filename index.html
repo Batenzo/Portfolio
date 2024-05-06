@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style.css">
     <!-- Boxicons link -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- Remixicons link -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
     <!-- Google font Roboto Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,15 +18,26 @@
 </head>
 <body>
     <header>
+        <!-- Menu icon -->
+        <div class="menu-icon">
+            <i class="ri-menu-2-fill" id="menu-icon"></i>
+        </div>
         <nav>
-            <ul class="menu">
+            <ul class="menu" id="menu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!-- close -->
+                <div class="nav_close" id="nav-close">
+                <i class="ri-close-line"></i>
+                </div>
             </ul>
-            <i class='bx bxs-moon' id="theme-toggle"></i>
+            <!-- <i class='bx bxs-moon' id="theme-toggle"></i> -->
+
+            
         </nav>
+        <i class='bx bxs-moon' id="theme-toggle"></i>   
     </header>
 
     <!-- Main -->
@@ -48,7 +61,7 @@
         <div class="about-content">
             <!-- About pic -->
         <div class="about-pic">
-            <img src="images/Enzo.png" alt="">
+            <img src="images/Enzo.png" width="254" alt="">
             <svg width="287" height="269" viewBox="0 0 287 269" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="34.6355" y="262.688" width="227.265" height="247.775" transform="rotate(-97.1324 34.6355 262.688)" stroke="#B48560" stroke-width="10"/>
                 </svg>
@@ -68,7 +81,7 @@
     </section>
 
     <!-- My skills -->
-    <section>
+    <section class="skills">
         <div class="heading">
             <h1>My Skills</h1>
         </div>
@@ -236,5 +249,6 @@
     <footer>
         <p>© Copyright 2024. Crafted by Enzo bat.</p>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>

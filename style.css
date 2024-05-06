@@ -15,12 +15,18 @@ header{
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+
 
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .menu{
@@ -42,6 +48,7 @@ nav{
     display: block;
     padding: 10px 15px;
     transition: ease-in-out 0.1s;
+   
 }
 /* Menu item hover */
 .menu li a:hover{
@@ -53,6 +60,61 @@ nav{
     color: #B48560;
     font-size: 34px;
 }
+
+/* Mobile device navigation */
+
+.nav_close,.menu-icon{
+    font-size: 34px;
+    cursor: pointer;
+    display: none;
+  
+}
+
+@media (max-width:748px){
+    .menu-icon{
+        display: block;
+    }
+    
+    .nav_close{
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+    }
+
+    .menu{
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all .50s ease;
+        row-gap: 10px;
+    }
+
+    .menu a{
+        padding: 20px;
+        margin: 30px;
+    }
+     
+    .open{
+        left: 0;
+    }
+
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+
+
 
 /* HERO */
 
@@ -91,6 +153,21 @@ nav{
     color: #B48560;
     font-weight: 600;
 }
+
+@media (max-width:500px){
+    .hero h1{
+        font-size: 50px;
+    }
+
+    .hero{
+        height: 100vh;
+        margin: 100px auto;
+    }
+
+    
+}
+
+
 
 /* ABOUT */
 .about{
@@ -155,6 +232,8 @@ nav{
 /* about paragraph */
 .about-txt{
     width: 565px;
+    display: flex;
+    flex-direction: column;
 }
 
 .about-txt p{
@@ -177,6 +256,43 @@ nav{
     color: #B48560;
 }
 
+
+/* about responsive */
+@media (max-width:1000px){
+    .about{
+        height: 100vh;
+        margin-top: 20px;
+    }
+    .about-content{
+        flex-direction: column;
+        gap: 0;
+        padding: 10px;
+        height: auto;
+        
+    }
+
+    .about-pic{
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .about-txt{
+        width: auto;
+        
+    }
+
+    .about-txt p{
+        font-size: 21px;
+    }
+
+    .about-socials a{
+        /* display: none; */
+        padding-right: 20px;
+    }
+
+}
+
+
 /* My skills */
 
 .skills-container{
@@ -191,6 +307,7 @@ nav{
 .skill svg:hover{
     color: #B48560;
 }
+
 
 /* Projects */
 
@@ -207,9 +324,10 @@ nav{
     padding: 20px;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.07); */
+    border: #B48560 2px solid;
 }
+
 
 .project img{
     width: 415px;
@@ -254,6 +372,28 @@ nav{
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
+
+@media (max-width:870px){
+    .project{
+        flex-direction: column;
+    }
+
+    .project img{
+        width: 200px;
+        height: 110px;
+    }
+
+    .project_descr{
+        width: 100%;
+        text-align: center;
+    }
+
+    .project_descr ul{
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 
 /* Contact me */
 
